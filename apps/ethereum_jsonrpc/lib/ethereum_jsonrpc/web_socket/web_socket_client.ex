@@ -26,8 +26,8 @@ defmodule EthereumJSONRPC.WebSocket.WebSocketClient do
   end
 
   @impl WebSocket
-  # only allow secure WSS
-  def start_link(["wss://" <> _ = url, gen_fsm_options]) when is_list(gen_fsm_options) do
+  # only allow secure WS
+  def start_link(["ws://" <> _ = url, gen_fsm_options]) when is_list(gen_fsm_options) do
     fsm_name =
       case Keyword.fetch(gen_fsm_options, :name) do
         {:ok, name} when is_atom(name) -> {:local, name}

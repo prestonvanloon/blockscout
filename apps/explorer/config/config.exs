@@ -10,11 +10,11 @@ config :ecto, json_library: Jason
 # General application configuration
 config :explorer,
   ecto_repos: [Explorer.Repo],
-  coin: "POA"
+  coin: "ETH"
 
 config :explorer, Explorer.Integrations.EctoLogger, query_time_ms_threshold: 2_000
 
-config :explorer, Explorer.ExchangeRates, enabled: true
+config :explorer, Explorer.ExchangeRates, enabled: false
 
 config :explorer, Explorer.Market.History.Cataloger, enabled: true
 

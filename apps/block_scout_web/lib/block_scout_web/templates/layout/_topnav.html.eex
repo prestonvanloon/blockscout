@@ -54,7 +54,7 @@
       <% end %>
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <!-- ICON FOR MAINNET -->
             <span class="nav-link-icon">
               <%= render BlockScoutWeb.IconsView, "_network_icon.html" %>
@@ -63,12 +63,8 @@
             <!-- <span class="nav-link-icon">
               <%= render BlockScoutWeb.IconsView, "_test_network_icon.html" %>
             </span> -->
-            <%= gettext("POA Core") %>
+            Prysm Testnet
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://sokol.blockscout.com/"><%= gettext("POA Sokol") %></a>
-            <a class="dropdown-item" href="https://poa.blockscout.com/"><%= gettext("POA Core") %></a>
-          </div>
         </li>
       </ul>
     </div>

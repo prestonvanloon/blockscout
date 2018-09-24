@@ -10,7 +10,7 @@ config :block_scout_web,
   namespace: BlockScoutWeb,
   ecto_repos: [Explorer.Repo]
 
-config :block_scout_web, BlockScoutWeb.Chain, logo: "/images/poa_logo.svg"
+config :block_scout_web, BlockScoutWeb.Chain, logo: "/images/prysm_logo.svg"
 
 # Configures the endpoint
 config :block_scout_web, BlockScoutWeb.Endpoint,
@@ -22,10 +22,10 @@ config :block_scout_web, BlockScoutWeb.Endpoint,
 config :block_scout_web, BlockScoutWeb.Gettext, locales: ~w(en), default_locale: "en"
 
 config :block_scout_web, BlockScoutWeb.SocialMedia,
-  twitter: "PoaNetwork",
-  telegram: "oraclesnetwork",
-  facebook: "PoaNetwork",
-  instagram: "PoaNetwork"
+  twitter: "prylabs",
+  telegram: "",
+  facebook: "",
+  instagram: ""
 
 config :ex_cldr,
   default_locale: "en",
